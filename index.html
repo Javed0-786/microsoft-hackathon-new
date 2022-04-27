@@ -39,7 +39,7 @@
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link active" href="#about_us">Abouts</a>
+                        <a class="nav-link active" href="#about_us">About </a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link active" href="#services">Services</a>
@@ -134,7 +134,7 @@
                 <div class="col-lg-4 mt-4">
                     <div class="card servicesText">
                         <div class="card-body">
-                            <i class='far servicesIcon fa-check-circle'></i>
+                            <!-- <i class='far servicesIcon fa-check-circle'></i> -->
                             <h4 class="card-title mt-3">Website Deployment</h4>
                             <p class="card-text mt-3">Deployment in software and web development means pushing changes or updates from one deployment environment to another. When setting up a website you will always have your live website, which is called the live environment or production environment.
                             </p>
@@ -147,7 +147,7 @@
                 <div class="col-lg-4 mt-4">
                     <div class="card servicesText">
                         <div class="card-body">
-                            <i class='fas servicesIcon fa-search'></i>
+                            <!-- <i class='fas servicesIcon fa-search'></i> -->
                             <h4 class="card-title mt-3">SEO</h4>
                             <p class="card-text mt-3">Search engine optimization (SEO) is the art and science of getting pages to rank higher in search engines such as Google. Because search is one of the main ways in which people discover content online, ranking higher in search engines can lead to an increase in traffic to a website.
                             </p>
@@ -158,7 +158,7 @@
                 <div class="col-lg-4 mt-4">
                     <div class="card servicesText">
                         <div class="card-body">
-                            <i class='fas servicesIcon fa-shield-alt'></i>
+                            <!-- <i class='fas servicesIcon fa-shield-alt'></i> -->
                             <h4 class="card-title mt-3">DevOps</h4>
                             <p class="card-text mt-3">DevOps is the combination of cultural philosophies, practices, and tools that increases an organization's ability to deliver applications and services at high velocity: evolving and improving products at a faster pace than organizations using traditional software development and infrastructure management processes.
                             </p>
@@ -169,7 +169,7 @@
                 <div class="col-lg-4 mt-4">
                     <div class="card servicesText">
                         <div class="card-body">
-                            <i class='fas servicesIcon fa-wrench'></i>
+                            <!-- <i class='fas servicesIcon fa-wrench'></i> -->
                             <h4 class="card-title mt-3">QA</h4>
                             <p class="card-text mt-3">Qualitative data is defined as the data that approximates and characterizes. Qualitative data can be observed and recorded. This data type is non-numerical in nature. This type of data is collected through methods of observations, one-to-one interviews, conducting focus groups, and similar methods.
                             </p>
@@ -180,20 +180,86 @@
         </div>
     </section>
 
+    <!-- testimonial page -->
+    <br><br>
+    <section class="testimonial text-center">
+        <div class="container">
+
+            <div class="heading white-heading">
+                Testimonial
+            </div>
+            <div id="testimonial4" class="carousel slide testimonial4_indicators testimonial4_control_button thumb_scroll_x swipe_x" data-ride="carousel" data-pause="hover" data-interval="5000" data-duration="2000">
+             
+                <div class="carousel-inner" role="listbox">
+                    <div class="carousel-item ">
+                        <div class="testimonial4_slide">
+                            <img src="images/angela_mam.jpg" class="img-circle img-responsive" />
+                            <p>
+                                Happy with the work that you did james. Your every work seems very fantastic and i love the way you do your work using your creativity you always blows my mind. 
+                            </p>
+                            <h4>Client 1</h4>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="testimonial4_slide">
+                            <img src="https://i.ibb.co/8x9xK4H/team.jpg" class="img-circle img-responsive" /><p> Really amazing experience I had with you. Having such a skilled person makes the things a lot more reliable and achievable. Thank you for you services</p>
+                            <h4>Client 2</h4>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="testimonial4_slide">
+                            <img src="images/angela_mam 1.jpg" class="img-circle img-responsive" />
+                            <p> Got the kind of developer I needed. Fully satisfied by his extraordinary spirit and dedication towards his job. Great to know you man.</p>
+                            <h4>Client 3</h4>
+                        </div>
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#testimonial4" data-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </a>
+                <a class="carousel-control-next" href="#testimonial4" data-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- javascript of testimonial -->
+
+    
+    <script>
+        var myIndex = 0;
+        carousel();
+        
+        function carousel() {
+          var i;
+          var x = document.getElementsByClassName("carousel-item ");
+          for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";  
+          }
+          myIndex++;
+          if (myIndex > x.length) {myIndex = 1}    
+          x[myIndex-1].style.display = "block";  
+          setTimeout(carousel, 2000); // Change image every 2 seconds
+        }
+        </script>
+        
+
+
 <!-- footer page -->
 
 <div class="footer-basic">
     <footer>
         <div class="social">
             <a href="#"><i class="fa fa-whatsapp" aria-hidden="true"></i></i></a>
-            <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-            <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-            <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+            <a href="https://www.instagram.com/"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+            <a href="https://www.twitter.com/"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+            <a href="https://www.facebook.com/"><i class="fa fa-facebook" aria-hidden="true"></i></a>
         </div>
         <ul class="list-inline">
             <li class="list-inline-item"><a href="#">Home</a></li>
-            <li class="list-inline-item"><a href="#">Services</a></li>
-            <li class="list-inline-item"><a href="#">About</a></li>
+            <li class="list-inline-item"><a href="#services">Services</a></li>
+            <li class="list-inline-item"><a href="#about">About</a></li>
             <li class="list-inline-item"><a href="#">Terms</a></li>
             <li class="list-inline-item"><a href="#">Privacy Policy</a></li>
         </ul>
