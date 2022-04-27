@@ -134,3 +134,12 @@ input[type=submit]:hover {
     margin: 50px;
     padding: 20px;
 }
+
+.card-body:hover{
+    color: rgb(3, 4, 4);
+    backdrop-filter: saturate(180%) blur(10px);
+}
+.card-body{
+    background-color: aquamarine;
+}
+
