@@ -11,8 +11,8 @@
 }
 
 .nav-item {
-    color: black;
-    font-weight: 600;
+    color: rgb(247, 246, 246);
+    font-weight: 700;
     cursor: pointer;
 }
 
@@ -26,6 +26,7 @@
     background: url('images/poster.jpg');
     background-size: cover;
     position: relative;
+    z-index: -1;
 }
 
 /* text css above hero image*/
@@ -138,8 +139,28 @@ input[type=submit]:hover {
 .card-body:hover{
     color: rgb(3, 4, 4);
     backdrop-filter: saturate(180%) blur(10px);
+    transform: scale(1.1);
 }
 .card-body{
     background-color: aquamarine;
 }
 
+.container-fluid{
+    overflow: hidden;
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
+}
+#home{
+    margin-top: 52px;
+}
+.container-fluid{
+    background-color:  #ada2ed;
+}
+#navbarSupportedContent{
+    color: white;
+}
+
+.row{
+    position: relative;
+}
