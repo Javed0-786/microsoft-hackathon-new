@@ -4,6 +4,9 @@
     margin: 0;
     padding: 0;
 }
+p,li{
+    font-weight: 700;
+}
 
 .man_navbar {
     width: 60px;
@@ -41,7 +44,7 @@
 }
 
 .hero_desc {
-    font-size: 2rem;
+    font-size: 3srem;
 }
 
 .hero-text {
@@ -85,7 +88,9 @@
 .servicesText:hover {
     border: 1px solid #008000;
 }
-
+.row mt-4{
+    font-weight: bold;
+}
 
 /* Style inputs with type="text", select elements and textareas */
 input[type=text],
