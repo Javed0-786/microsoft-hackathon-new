@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -18,9 +19,10 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
+
 <body>
     <!-- navbar -->
-<br><br>
+    <br><br>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
             <img src="images/man.png" alt="" srcset="" class="man_navbar">
@@ -57,7 +59,7 @@
 
 
     <!-- testimonial -->
-    <section class="testimonial text-center">
+    <!-- <section class="testimonial text-center">
         <div class="container">
 
             <div class="heading white-heading">
@@ -97,7 +99,7 @@
                 </a>
             </div>
         </div>
-    </section>
+    </section> -->
 
 
     <!-- footer -->
@@ -127,21 +129,21 @@
     <script>
         var myIndex = 0;
         carousel();
-        
+
         function carousel() {
-          var i;
-          var x = document.getElementsByClassName("carousel-item ");
-          for (i = 0; i < x.length; i++) {
-            x[i].style.display = "none";  
-          }
-          myIndex++;
-          if (myIndex > x.length) {myIndex = 1}    
-          x[myIndex-1].style.display = "block";  
-          setTimeout(carousel, 2000); // Change image every 2 seconds
+            var i;
+            var x = document.getElementsByClassName("carousel-item ");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            myIndex++;
+            if (myIndex > x.length) { myIndex = 1 }
+            x[myIndex - 1].style.display = "block";
+            setTimeout(carousel, 2000); // Change image every 2 seconds
         }
-        </script>
-        
+    </script>
+
 
 </body>
+
 </html>
-    
